@@ -3,10 +3,10 @@
         $numeroH=$_POST['valorH'];
         $sueldobasico=600;
         $bonificacion=$numeroH * 50;
-        $comision=$numeroIT * 7.5;
+        $comision=$numeroIT * 0.75;
         $sueldobruto=$bonificacion+$comision+$sueldobasico;
-        $descuento=$sueldobruto*11;
-        $sueldoneto=$descuento-$sueldobruto;
+        $descuento=$sueldobruto*0.11;
+        $sueldoneto=$sueldobruto-$descuento;
         echo "La bonificacion es de: ".$bonificacion."<br>";
         echo "La comision es de: ".$comision."<br>";
         echo "El sueldo bruto es de: ".$sueldobruto."<br>";
