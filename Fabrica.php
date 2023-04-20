@@ -2,7 +2,7 @@
        $precio=$_POST['precio'];
        $cantidad=$_POST['cantidad'];
 
-       $nuevoprecio=$precio*1-0.05;
+       $nuevoprecio=$precio*0.05;
        $importe_compra=$nuevoprecio*$cantidad;
        $importe_descuento=$importe_compra*0.07;
        $importe_pagar=$importe_compra-$importe_descuento;
